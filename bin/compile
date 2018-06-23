@@ -73,7 +73,7 @@ echo "Cache folder created on ${CACHE_DIR}"
 
 # TODO: This test doesn't seen to actually work
 # TODO: Maybe just run `npm install -g` and if anything is missing, install it after
-if [[ -n $(find ${SRC_DIR} -type f -iname package.json -o -iname bower.json) ]]
+if [[ -n $(find ${SRC_DIR} -type f -iname package.json -o -iname *.csproj) ]]
 then
 	echo "Installing Node"
 	NODE_PATH=`mktemp -d`
